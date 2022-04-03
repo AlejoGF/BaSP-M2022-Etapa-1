@@ -1,0 +1,72 @@
+/* colours
+$gnavy: #373867;
+$lggreen: #AACE9B;
+$bgreen: #49A37B;
+$rorange: #F13312;
+$ucol: #DADADA;  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* sidebar */
+.menu {
+    float: left;
+    background-color: #DADADA;
+    width: 400px;
+    height: 2900px;
+    padding: 50px;
+}
+
+.bar, .login, .signup {
+    float:left;
+    padding: 12px 35px 12px 35px;
+    margin: auto;
+    border: none;
+}
+
+.bar {
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.login, .signup {
+    margin: 25px 0 25px 0;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.login {
+    background-color: #49A37B;
+    color: #FFF
+}
+
+.signup {
+    background-color: #373867;
+    color: #FFF;
+    margin-left: 10px;
+}
+
+.btnloginsignup {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    float: left;
+}
+
+.menu span {
+    text-decoration: underline;
+}
