@@ -14,18 +14,21 @@ $ucol: #DADADA;  */
 body {
     background-color: #fff;
     font-family: 'Roboto', sans-serif;
+    overflow: auto;
 }
 
-/* sidebar */
+/* sidebar & buttons */
 .menu {
+    /* position: fixed; */
     float: left;
     background-color: #DADADA;
     width: 400px;
-    height: 2900px;
+    height: 3800px;
     padding: 50px;
+    margin-right: 100px;
 }
 
-.bar, .login, .signup {
+.bar, .login, .signup, button {
     float:left;
     padding: 12px 35px 12px 35px;
     margin: auto;
@@ -35,15 +38,15 @@ body {
 .bar {
     width: 100%;
     padding: 10px;
-    font-size: 24px;
-    border-radius: 5px;
+    font-size: 20px;
+    border-radius: 10px;
 }
 
 .login, .signup {
     margin: 25px 0 25px 0;
     border-radius: 12px;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .login {
@@ -57,6 +60,14 @@ body {
     margin-left: 10px;
 }
 
+button {
+    background-color: #AACE9B;
+    color: #373867;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
 .btnloginsignup {
     width: 100%;
     display: flex;
@@ -65,8 +76,124 @@ body {
 
 nav {
     float: left;
+    width: 100%;
 }
 
-.menu span {
+nav ul {
+    list-style: none;
+    padding: 5px 0 25px 0;
+}
+
+nav ul li {
+    font-size: 18px;
+    color: #373867;
+    line-height: 30px;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+nav ul a:hover {
     text-decoration: underline;
 }
+
+nav span {
+    color: #49A37B;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: solid 1px #49A37B;
+}
+
+/* txt */
+h2 {
+    color: #373867;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h4 {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+p {
+    color: #373867;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#trackgenixsa, #features, #whytrackgenix, #form {
+    /* float: left; */
+    padding-left: 500px;
+    padding-right: 100px;
+}
+
+/* trackgenixsa */
+h1 {
+    color: #373867;
+    font-size: 80px;
+    font-weight: bold;
+    max-width: 100%;
+    border-bottom: solid 4px #373867;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+.content01 {
+    max-width: 100%;
+    margin-bottom: 100px;
+}
+
+.content01 span {
+    color: #49A37B;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.content01 p {
+    width: 45%;
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.content01 img {
+    float: right;
+    width: 685px;
+    height: 415px;
+    margin-top: 50px;
+}
+
+.content02 {
+    max-width: 100%;
+    margin-bottom: 100px;
+}
+
+.content02 span {
+    color: #49A37B;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.content02 p {
+    float: right;
+    width: 52.5%;
+    margin-top: 60px;
+    line-height: 30px;
+}
+
+.content02 img {
+    float: left;
+    width: 580px;
+    height: 285px;
+    margin-top: 20px;
+}
+
+.content02 button {
+    margin-left: 40px;
+    margin-top: 25px;
+    float: left;
+}
+
