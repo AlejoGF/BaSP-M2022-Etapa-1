@@ -378,3 +378,36 @@ textarea {
     background-color: #DADADA;
     margin-left: 10px;
 }
+
+/* footer */
+footer {
+    z-index: 2;
+    float: left;
+    background-color: #373867;
+    width: 100%;
+}
+
+.footproducts, .footcompany, .footsupport {
+    margin-left: 300px;
+    max-width: 100%;
+}
+
+footer h2 {
+    color: #FFF;
+}
+
+footer ol li {
+    color: #FFF;
+    font-size: 1rem;
+}
+
+#socialmedia {
+    background-color: #FFF;
+    padding: 25px 0 25px 0;
+    text-align: center;
+}
+
+#socialmedia a i {
+    color: #373867;
+    padding: 0 5px 0 5px;
+}
