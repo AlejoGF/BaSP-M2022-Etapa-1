@@ -75,9 +75,6 @@ button {
     justify-content: space-around;
 }
 
-nav {
-}
-
 nav ul {
     list-style: none;
     padding: 5px 0 25px 0;
@@ -175,10 +172,6 @@ h1 {
     border: solid 2px #373867;
 }
 
-.content02 {
-    /* margin-bottom: 50px; */
-}
-
 .content02 span {
     color: #49A37B;
     font-size: 40px;
@@ -202,9 +195,6 @@ h1 {
 }
 
 /* features */
-.textcontent {
-}
-
 .textcontent h2 {
     border-bottom: solid 3px #373867;
     padding-bottom: 5px;
@@ -231,9 +221,6 @@ h1 {
 }
 
 /* whytrackgenix */
-#whytrackgenix {
-}
-
 .content01 h2 {
     border-bottom: solid 3px #373867;
     margin-bottom: 50px;
@@ -277,17 +264,12 @@ h3 {
 }
 
 /* form */
-#form {
-}
 
 #form h2 {
     max-width: 100%;
     border-bottom: solid 3px #373867;
     margin-bottom: 50px;
     padding-bottom: 5px;
-}
-
-.fields {
 }
 
 label {
@@ -308,9 +290,6 @@ select {
 option {
     color:#373867;
     font-size: 12px;
-}
-
-.fieldtextarea {
 }
 
 textarea {
