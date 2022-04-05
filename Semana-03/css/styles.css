@@ -77,20 +77,27 @@ button {
 
 nav ul {
     list-style: none;
-    padding: 5px 0 25px 0;
+    padding: 7.5px 0 25px 0;
 }
 
 nav ul li {
-    font-size: 18px;
+    font-size: 16px;
     color: #373867;
-    line-height: 30px;
+    line-height: 37.5px;
+}
+
+nav ul li i {
+    font-family: "Font Awesome 5 Free";
+    margin-right: 5px;
 }
 
 nav ul a {
+    color: #373867;
     text-decoration: none;
 }
 
 nav ul a:hover {
+    color: #49A37B;
     text-decoration: underline;
 }
 
@@ -341,7 +348,7 @@ footer h4 {
 footer ol li {
     color: #FFF;
     line-height: 25px;
-    margin-left: 10%;
+    margin-left: 9%;
 }
 
 #socialmedia {
@@ -354,4 +361,8 @@ footer ol li {
 #socialmedia a i {
     color: #373867;
     padding: 0 5px 0 5px;
+}
+
+#socialmedia a i:hover {
+    color: #49A37B;
 }
