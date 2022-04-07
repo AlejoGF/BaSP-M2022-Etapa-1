@@ -1,0 +1,316 @@
+/* colours
+$gnavy: #373867;
+$lggreen: #AACE9B;
+$bgreen: #49A37B;
+$rorange: #F13312;
+$ucol: #DADADA;  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    overflow: auto;
+}
+
+/* sidebar & buttons */
+.menu {
+    position: fixed;
+    height: 100%;
+    /* height: 3850px;
+    float: left;*/
+    background-color: #DADADA;
+    width: 20%;
+    padding: 50px;
+}
+
+.bar,
+.login,
+.signup,
+button {
+    padding: 12px 35px 12px 35px;
+    border: none;
+}
+
+.bar {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.login, .signup {
+    margin: 25px 0 25px 0;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.login {
+    background-color: #49A37B;
+    color: #FFF
+}
+
+.signup {
+    background-color: #373867;
+    color: #FFF;
+    margin-left: 10px;
+}
+
+button {
+    background-color: #AACE9B;
+    color: #373867;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.btnloginsignup {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    list-style: none;
+    padding: 7.5px 0 25px 0;
+}
+
+nav ul li {
+    font-size: 16px;
+    color: #373867;
+    line-height: 37.5px;
+}
+
+nav ul li i {
+    font-family: "Font Awesome 5 Free";
+    margin-right: 5px;
+}
+
+nav ul a {
+    color: #373867;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: #49A37B;
+    text-decoration: underline;
+}
+
+nav span {
+    color: #49A37B;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: solid 2px #49A37B;
+    display: block;
+}
+
+/* txt */
+h2 {
+    color: #373867;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+p {
+    color: #373867;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#trackgenixsa,
+#features,
+#whytrackgenix,
+#form {
+    padding-left: 25%;
+    padding-right: 7.5%;
+    margin-bottom: 150px;
+}
+
+/* trackgenixsa */
+h1 {
+    color: #373867;
+    font-size: 80px;
+    font-weight: bold;
+    max-width: 100%;
+    border-bottom: solid 4px #373867;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+#trackgenixsa .leftcolumn {
+    display: inline-block;
+    width: 55%;
+    margin-right: 2.5%;
+    vertical-align: top;
+}
+
+#trackgenixsa .rightcolumn {
+    display: inline-block;
+    width: 40%;
+    margin-left: 2.5%;
+    vertical-align: top;
+}
+
+.content01 {
+    margin-bottom: 50px;
+}
+
+.content01 span {
+    color: #49A37B;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.content01 p {
+    margin-top: 15px;
+    line-height: 30px;
+}
+
+.content01 img {
+    width: 40%;
+    height: auto;
+    border-radius: 50px;
+    border: solid 2px #373867;
+}
+
+.content02 span {
+    color: #49A37B;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.content02 p {
+    margin-top: 15px;
+    line-height: 30px;
+}
+
+.content02 img {
+    width: 55%;
+    height: auto;
+    border-radius: 50px;
+    border: solid 2px #373867;
+}
+
+.content02 button {
+    margin-top: 25px;
+}
+
+/* features */
+.textcontent h2 {
+    border-bottom: solid 3px #373867;
+    padding-bottom: 5px;
+}
+
+.textcontent ul {
+    margin-top: 15px;
+    line-height: 30px;
+}
+
+.textcontent ul li {
+    color: #373867;
+    font-size: 1.25rem;
+    margin-left: 75px;
+}
+
+.textcontent ul li span {
+    font-weight: bold;
+}
+
+.textcontent p {
+    margin-top: 25px;
+    line-height: 30px;
+}
+
+/* whytrackgenix */
+.content01 h2 {
+    border-bottom: solid 3px #373867;
+    margin-bottom: 50px;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #373867;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#whytrackgenix .content01 .rightcolumn {
+    display: inline-block;
+    width: 40%;
+    margin-left: 15%;
+    margin-top: 3%;
+    vertical-align: top;
+    text-align: center;
+}
+
+#whytrackgenix .content01 .leftcolumn,
+#whytrackgenix .content02 .leftcolumn {
+    display: inline-block;
+    width: 40%;
+    margin-right: 15%;
+    margin-top: 3%;
+    vertical-align: top;
+    text-align: center;
+}
+
+#whytrackgenix .content02 img {
+    width: 40%;
+    height: auto;
+    border-radius: 50px;
+    border: solid 2px #373867;
+}
+
+#whytrackgenix .content01 button {
+    margin-top: 15px;
+}
+
+/* form */
+
+#form h2 {
+    max-width: 100%;
+    border-bottom: solid 3px #373867;
+    margin-bottom: 50px;
+    padding-bottom: 5px;
+}
+
+label {
+    color:#373867;
+    font-size: 16px;
+    display: block;
+}
+
+input,
+select {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 30%;
+    padding: 7.5px;
+    font-size: 14px;
+}
+
+option {
+    color:#373867;
+    font-size: 12px;
+}
+
+textarea {
+    padding: 7.5px;
+    width: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.formbtn {
+    margin-top: 25px;
+}
+
+.reset {
+    background-color: #DADADA;
+    margin-left: 10px;
+}
