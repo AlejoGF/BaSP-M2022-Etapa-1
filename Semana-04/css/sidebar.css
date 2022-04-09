@@ -1,0 +1,26 @@
+/* PRIMERO > REGLAS DE POSITION Y DISPLAY
+SEGUNDO > REGLAS DE BOX-MODEL (WIDTH-HEIGHT-MARGIN-PADDING-TOP-LEFT-ETC)
+TERCERO > BACKGROUND Y BORDER
+CUARTO > TEXTO (FONT-SIZE FONT-WEIGHT TEXT-ALIGN TEXT-SHADOW ETC)
+QUINTO > DEMÁS REGLAS */
+
+aside {
+    display: none;
+}
+
+
+/* media queries 768px */
+@media (min-width: 768px) {
+    aside {
+        display: none;
+    }
+}
+
+
+/* media queries 1024px */
+@media (min-width: 1024px) {
+    aside {
+        display: flex;
+        width: 20%;
+    }
+}

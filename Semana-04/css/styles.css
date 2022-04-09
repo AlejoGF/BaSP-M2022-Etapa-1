@@ -1,28 +1,7 @@
-/* colours
-$gnavy: #373867;
-$lggreen: #AACE9B;
-$bgreen: #49A37B;
-$rorange: #F13312;
-$ucol: #DADADA;  */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #fff;
-    font-family: 'Roboto', sans-serif;
-    overflow: auto;
-}
-
 /* sidebar & buttons */
 .menu {
     position: fixed;
     height: 100%;
-    /* height: 3850px;
-    float: left;*/
     background-color: #DADADA;
     width: 20%;
     padding: 50px;
