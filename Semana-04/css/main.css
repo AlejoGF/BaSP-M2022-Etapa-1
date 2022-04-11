@@ -4,6 +4,48 @@ TERCERO > BACKGROUND Y BORDER
 CUARTO > TEXTO (FONT-SIZE FONT-WEIGHT TEXT-ALIGN TEXT-SHADOW ETC)
 QUINTO > DEMÁS REGLAS */
 
+#trackgenixsa {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: auto;
+}
+
+#trackgenixsa .column span {
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #49A37B;
+}
+
+#trackgenixsa p {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 22.5px;
+    color: #373867;
+}
+
+#trackgenixsa .container .column p:nth-child(3) {
+    display: none;
+}
+
+#trackgenixsa .container .column button {
+    display: none;
+}
+
+#trackgenixsa .img-whatistrackgenix {
+    height: 135px;
+    object-fit: cover;
+}
+
+#trackgenixsa .img-ourhistory {
+    height: 170px;
+    object-fit: cover;
+}
+
 #features, #whytrackgenix, #form {
     display: flex;
     flex-direction: column;
@@ -27,6 +69,12 @@ QUINTO > DEMÁS REGLAS */
 
 #whytrackgenix img {
     width: 70%;
+}
+
+#whytrackgenix .img-whytrackgenix {
+    height: 115px;
+    object-fit: cover;
+    object-position: center;
 }
 
 #whytrackgenix .mt {
@@ -61,12 +109,86 @@ QUINTO > DEMÁS REGLAS */
 
 /* media queries 768px */
 @media (min-width: 768px) {
+    .p2 {
+        display: none;
+    }
 }
 
 
 /* media queries 1024px */
 @media (min-width: 1024px) {
     main {
+        margin-left: 20%;
         width: 80%;
+    }
+
+    #trackgenixsa {
+        width: 85%;
+    }
+
+    #trackgenixsa .container {
+        flex-direction: row;
+    }
+
+    #trackgenixsa .container:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    #trackgenixsa .column {
+        align-items: flex-start;
+    }
+
+    #trackgenixsa .column span {
+        text-align: left;
+    }
+
+    #trackgenixsa p {
+        text-align: left;
+    }
+
+    #trackgenixsa .img-whatistrackgenix {
+        margin-left: 25px;
+        height: 315px;
+    }
+
+    #trackgenixsa .img-ourhistory {
+        margin-right: 25px;
+        height: 215px;
+    }
+
+    #trackgenixsa .container .column button {
+        display: flex;
+        width: 33%;
+        justify-content: center;
+    }
+
+    #features, #whytrackgenix, #form {
+        width: 85%;
+    }
+
+    #features p {
+        text-align: left;
+    }
+
+    #features ul {
+        align-items: flex-start;
+    }
+
+    #features ul li {
+        list-style: disc;
+    }
+}
+
+/* media queries 1280px */
+@media (min-width: 1280px) {
+    /* ACÁ SINCERAMENTE NO SE PORQUE PONIENDO EL 3 PUDE, PENSÉ QUE IBA A SER EL #2 */
+    #trackgenixsa .container .column p:nth-child(3) {
+        display: flex;
+    }
+
+    #trackgenixsa .container .column button {
+        display: flex;
+        width: 25%;
+        justify-content: center;
     }
 }

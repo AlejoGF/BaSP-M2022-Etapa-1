@@ -132,3 +132,21 @@ footer {
     padding-top: 35px;
     background-color: #373867;
 }
+
+
+/* media queries 768px */
+@media (min-width: 768px) {
+}
+
+/* media queries 1024px */
+@media (min-width: 1024px) {
+    h2 {
+        width: 100%;
+        text-align: left;
+    }
+
+    ul li {
+        margin-left: 5%;
+        font-size: 15px;
+    }
+}
