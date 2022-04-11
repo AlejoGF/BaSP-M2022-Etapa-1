@@ -136,6 +136,14 @@ footer {
 
 /* media queries 768px */
 @media (min-width: 768px) {
+    h2 {
+        width: 100%;
+    }
+
+    input,
+    select {
+        width: 97.5%;
+    }
 }
 
 /* media queries 1024px */
