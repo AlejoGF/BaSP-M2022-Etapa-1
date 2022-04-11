@@ -177,6 +177,63 @@ QUINTO > DEMÁS REGLAS */
     #features ul li {
         list-style: disc;
     }
+
+    #whytrackgenix .container {
+        flex-direction: row;
+    }
+
+    #whytrackgenix .container:nth-child(3),
+    #whytrackgenix .container:nth-child(5) {
+        flex-direction: row-reverse;
+    }
+
+    #whytrackgenix .container .column {
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    }
+
+    #whytrackgenix .container .column p {
+        width: 85%;
+    }
+
+    #whytrackgenix .container .column button {
+        margin-bottom: 0;
+        width: 33%;
+    }
+
+    #whytrackgenix img {
+        margin: 0 auto 0 auto;
+        width: 70%;
+    }
+
+    #whytrackgenix .img-whytrackgenix {
+        height: 175px;
+    }
+
+    form {
+        width: 35%;
+    }
+
+    form .fields {
+        width: 100%;
+    }
+
+    textarea {
+        width: 95%;
+    }
+
+    #form .form-btn button {
+        width: 48%;
+    }
+
+    #form .form-btn .reset {
+        margin-left: 5%;
+    }
+
+    #form #category {
+        width: 97.5%;
+    }
 }
 
 /* media queries 1280px */
@@ -187,8 +244,14 @@ QUINTO > DEMÁS REGLAS */
     }
 
     #trackgenixsa .container .column button {
-        display: flex;
         width: 25%;
-        justify-content: center;
+    }
+
+    form {
+        width: 45%;
+    }
+
+    #form .form-btn button {
+        width: 36%;
     }
 }

@@ -60,8 +60,8 @@ footer ol li {
 @media (min-width: 1024px) {
         footer h2 {
         display: flex;
-        justify-content: center;
-        margin: 10px auto 35px auto;
+        justify-content: flex-start;
+        margin-left: 7.5%;
         padding: 0;
         color: #FFF;
     }
