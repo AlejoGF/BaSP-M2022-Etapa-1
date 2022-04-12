@@ -20,6 +20,8 @@
 
 #trackgenixsa .container .column button {
     display: none;
+    width: 37%;
+    justify-content: center;
 }
 
 #trackgenixsa .img-whatistrackgenix {
@@ -86,14 +88,4 @@
 #form .form-btn .reset {
     background-color: #DADADA;
     color: #373867;
-}
-
-
-/* media queries 768px */
-@media (min-width: 768px) {
-}
-
-
-/* media queries 1024px */
-@media (min-width: 1024px) {
 }
