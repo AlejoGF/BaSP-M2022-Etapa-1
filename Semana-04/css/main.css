@@ -1,12 +1,4 @@
-/* PRIMERO > REGLAS DE POSITION Y DISPLAY
-SEGUNDO > REGLAS DE BOX-MODEL (WIDTH-HEIGHT-MARGIN-PADDING-TOP-LEFT-ETC)
-TERCERO > BACKGROUND Y BORDER
-CUARTO > TEXTO (FONT-SIZE FONT-WEIGHT TEXT-ALIGN TEXT-SHADOW ETC)
-QUINTO > DEMÁS REGLAS */
-
 #trackgenixsa {
-    display: flex;
-    flex-direction: column;
     width: 85%;
     margin: auto;
 }
@@ -15,17 +7,11 @@ QUINTO > DEMÁS REGLAS */
     margin-top: 25px;
     font-size: 30px;
     font-weight: 700;
-    text-align: center;
     color: #49A37B;
 }
 
 #trackgenixsa p {
-    margin-top: 15px;
     font-size: 16px;
-    font-weight: 400;
-    text-align: center;
-    line-height: 22.5px;
-    color: #373867;
 }
 
 #trackgenixsa .container .column p:nth-child(3) {
@@ -49,7 +35,6 @@ QUINTO > DEMÁS REGLAS */
 #features, #whytrackgenix, #form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 85%;
     margin: 35px auto 0 auto;
 }
@@ -71,6 +56,10 @@ QUINTO > DEMÁS REGLAS */
     width: 70%;
 }
 
+#whytrackgenix p {
+    text-align: center;
+}
+
 #whytrackgenix .img-whytrackgenix {
     height: 115px;
     object-fit: cover;
@@ -80,15 +69,12 @@ QUINTO > DEMÁS REGLAS */
 #whytrackgenix .mt {
     margin-top: 35px;
     padding-top: 20px;
-    /* max-width: 70%; */
-    /* ¿DE QUE MANERA PUEDO HACER PARA QUE EL BORDER ME QUEDE SOLO DEL 70%? */
     border-top: solid 1px #373867;
 }
 
 #form .form-btn {
     display: flex;
     justify-content: space-between;
-    width: 97.5%;
 }
 
 #form .form-btn button {
@@ -100,10 +86,6 @@ QUINTO > DEMÁS REGLAS */
 #form .form-btn .reset {
     background-color: #DADADA;
     color: #373867;
-}
-
-#form #category {
-    width: 97.5%;
 }
 
 
@@ -150,10 +132,6 @@ QUINTO > DEMÁS REGLAS */
         justify-content: center;
     }
 
-    #features, #whytrackgenix, #form {
-        width: 85%;
-    }
-
     #features p {
         text-align: left;
     }
@@ -191,32 +169,12 @@ QUINTO > DEMÁS REGLAS */
         height: 175px;
     }
 
-    form {
-        width: 100%;
-    }
-
-    form .fields {
-        width: 100%;
-    }
-
-    textarea {
-        width: 97.5%;
-    }
-
-    #form .form-btn {
-        width: 100%;
-    }
-
     #form .form-btn button {
         width: 22.5%;
     }
 
     #form .form-btn .reset {
         margin-left: 5%;
-    }
-
-    #form #category {
-        width: 99.5%;
     }
 }
 
@@ -226,30 +184,6 @@ QUINTO > DEMÁS REGLAS */
     main {
         margin-left: 20%;
         width: 80%;
-    }
-
-    #trackgenixsa {
-        width: 85%;
-    }
-
-    #trackgenixsa .container {
-        flex-direction: row;
-    }
-
-    #trackgenixsa .container:nth-child(2) {
-        flex-direction: row-reverse;
-    }
-
-    #trackgenixsa .column {
-        align-items: flex-start;
-    }
-
-    #trackgenixsa .column span {
-        text-align: left;
-    }
-
-    #trackgenixsa p {
-        text-align: left;
     }
 
     #trackgenixsa .img-whatistrackgenix {
@@ -268,10 +202,6 @@ QUINTO > DEMÁS REGLAS */
         justify-content: center;
     }
 
-    #features, #whytrackgenix, #form {
-        width: 85%;
-    }
-
     #features p {
         text-align: left;
     }
@@ -284,28 +214,8 @@ QUINTO > DEMÁS REGLAS */
         list-style: disc;
     }
 
-    #whytrackgenix .container {
-        flex-direction: row;
-    }
-
-    #whytrackgenix .container:nth-child(3),
-    #whytrackgenix .container:nth-child(5) {
-        flex-direction: row-reverse;
-    }
-
-    #whytrackgenix .container .column {
-        justify-content: center;
-        align-items: center;
-        width: 70%;
-    }
-
-    #whytrackgenix .container .column p {
-        width: 85%;
-    }
-
     #whytrackgenix .container .column button {
-        margin-bottom: 0;
-        width: 33%;
+        width: 35%;
     }
 
     #whytrackgenix img {
@@ -321,14 +231,6 @@ QUINTO > DEMÁS REGLAS */
         width: 35%;
     }
 
-    form .fields {
-        width: 100%;
-    }
-
-    textarea {
-        width: 95%;
-    }
-
     #form .form-btn button {
         width: 48%;
     }
@@ -336,15 +238,10 @@ QUINTO > DEMÁS REGLAS */
     #form .form-btn .reset {
         margin-left: 5%;
     }
-
-    #form #category {
-        width: 97.5%;
-    }
 }
 
 /* media queries 1280px */
 @media (min-width: 1280px) {
-    /* ACÁ SINCERAMENTE NO SE PORQUE PONIENDO EL 3 PUDE, PENSÉ QUE IBA A SER EL #2 */
     #trackgenixsa .container .column p:nth-child(3) {
         display: flex;
     }
