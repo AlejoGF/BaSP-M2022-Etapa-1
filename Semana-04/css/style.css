@@ -26,7 +26,7 @@ body {
 
 h2 {
     width: 80%;
-    margin: 25px auto 25px auto;
+    margin: 25px auto 5px auto;
     padding: 0 0 2.5px 0;
     border-bottom: solid 3px #373867;
     font-size: 30px;
@@ -58,7 +58,6 @@ ul {
 }
 
 ul li {
-    margin-left: 20px;
     font-size: 14px;
     font-weight: 400;
     text-align: justify;
@@ -138,6 +137,7 @@ footer {
 @media (min-width: 768px) {
     h2 {
         width: 100%;
+        margin: 25px auto 25px auto;
     }
 
     input,
@@ -150,6 +150,7 @@ footer {
 @media (min-width: 1024px) {
     h2 {
         width: 100%;
+        margin: 25px auto 25px auto;
         text-align: left;
     }
 

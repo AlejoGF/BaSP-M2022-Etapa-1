@@ -53,6 +53,16 @@ footer ol li {
 
 /* media queries 768px */
 @media (min-width: 768px) {
+    footer {
+    padding-top: 0;
+    }
+
+    footer h2 {
+    display: flex;
+    justify-content: center;
+    margin: 35px auto 35px auto;
+    color: #FFF;
+    }
 }
 
 
@@ -63,6 +73,7 @@ footer ol li {
         justify-content: flex-start;
         margin-left: 7.5%;
         padding: 0;
+        width: 92.5%;
         color: #FFF;
     }
 }
