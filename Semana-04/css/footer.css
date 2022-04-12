@@ -55,34 +55,3 @@ footer ol li {
 #social-media a i:hover {
     color: #49A37B;
 }
-
-
-/* media queries 768px */
-@media (min-width: 768px) {
-    footer {
-    display: flex;
-    padding-top: 0;
-    }
-
-    footer h2 {
-    display: flex;
-    justify-content: center;
-    margin: 35px auto 35px auto;
-    color: #FFF;
-    }
-
-    footer .container {
-    margin: 0;
-    }
-}
-
-
-/* media queries 1024px */
-@media (min-width: 1024px) {
-        footer h2 {
-        justify-content: flex-start;
-        margin-left: 7.5%;
-        padding: 0;
-        width: 92.5%;
-    }
-}

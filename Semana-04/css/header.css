@@ -13,16 +13,3 @@ header h1 {
     text-align: center;
     color: #373867;
 }
-
-/* media queries 768px */
-@media (min-width: 768px) {
-}
-
-
-/* media queries 1024px */
-@media (min-width: 1024px) {
-    header h1 {
-        font-size: 60px;
-        text-align: left;
-    }
-}
