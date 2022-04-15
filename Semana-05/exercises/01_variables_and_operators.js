@@ -12,6 +12,7 @@ console.log('Total =', finalNumber);
 var cityBorn = 'Rosario';
 var countryBorn = 'Argentina';
 var placeBorn = cityBorn + ", " + countryBorn;
+
 console.log('Where are you from?: ', placeBorn);
 
 /// c.
