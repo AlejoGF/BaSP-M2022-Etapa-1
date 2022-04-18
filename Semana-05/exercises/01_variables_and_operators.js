@@ -10,7 +10,7 @@ var finalNumber = numberOne + numberTwo;
 console.log('Total =', finalNumber);
 
 // b. Crear dos variables de tipo String y concatenarlas guardando el resultado en una 3er variable.
-console.log('\n-Exercise 1.b');
+console.log('\n-Exercise 1.b:');
 
 var cityBorn = 'Rosario';
 var countryBorn = 'Argentina';
@@ -19,11 +19,10 @@ var placeBorn = cityBorn + ", " + countryBorn;
 console.log('Where are you from?: ', placeBorn);
 
 /// c. Crear dos variables de tipo String y sumar el largo de cada variable (cantidad de letras del string) guardando el resultado de la suma en una 3er variable (utilizar length).
-console.log('\n-Exercise 1.c');
+console.log('\n-Exercise 1.c:');
 
 var firstName = 'Alejo';
 var lastName = 'Gonzalez';
-var lengthName;
-lengthName = firstName.length+ lastName.length;
+var lengthName = firstName.length+ lastName.length;
 
-console.log(lengthName);
+console.log('The total length of ' + firstName + ' and ' + lastName + ' is ' + lengthName);
