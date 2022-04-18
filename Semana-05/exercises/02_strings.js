@@ -44,10 +44,11 @@ console.log(whiteSpace);
 console.log('\n-Exercise 2.f:');
 
 var twoLongWords = 'AUTÓGRAFOS ARGENTINOS';
-var twoLongWordsPhase1 = twoLongWords.substring(0,1).toUpperCase();
-var twoLongWordsPhase2 = twoLongWords.substring(1,10).toLowerCase();
-var twoLongWordsPhase3 = twoLongWords.substring(11,12).toUpperCase();
-var twoLongWordsPhase4 = twoLongWords.substring(12,21).toLowerCase();
-var twoLongWordsFinal = twoLongWordsPhase1 + twoLongWordsPhase2 + ' ' + twoLongWordsPhase3 + twoLongWordsPhase4;
+var twoLongWordsIO = twoLongWords.indexOf(' ');
+var twoLongWordsPhase1 = twoLongWords[0].toUpperCase()
+    + twoLongWords.substring(1, twoLongWordsIO).toLowerCase()
+    + ' '
+    + twoLongWords[twoLongWordsIO+=1].toUpperCase()
+    + twoLongWords.substring(twoLongWordsIO+=1).toLowerCase();
 
-console.log(twoLongWordsFinal);
+console.log(twoLongWordsPhase1);
