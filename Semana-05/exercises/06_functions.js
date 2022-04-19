@@ -15,7 +15,7 @@ console.log('\n-Exercise 6.b:');
 
 function totalNr2(nr1, nr2) {
     if (isNaN(nr1) || isNaN(nr2)) {
-        console.log('Error');
+        console.log('One of the parameters has an error');
         return NaN;
     } else {
         return nr1 + nr2;
@@ -39,13 +39,13 @@ console.log('\n-Exercise 6.d:');
 
 function totalNr3(nr1, nr2) {
     if (isNaN(nr1) || isNaN(nr2)) {
-        console.log('Error');
+        alert('One of the parameters has an error');
         return NaN;
     } else {
         if (Number.isInteger(nr1) && Number.isInteger(nr2)) {
             return nr1 + nr2;
         } else {
-            console.log('Error');
+            alert('Error');
             if (!Number.isInteger(nr1)) {
                 return Math.round(nr1)
             } else {
@@ -66,7 +66,7 @@ function validate(a, b) {
     if (Number.isInteger(a) && Number.isInteger(b)) {
         return a + b;
     } else {
-        console.log('Error');
+        console.log('One of the parameters has an error');
         if(!Number.isInteger(a)){
             return Math.round(a)
         } else {
