@@ -16,7 +16,7 @@
     Link to my page: "https://alejogf.github.io/BaSP-M2022-Etapa-1/Semana-04/"
 
 ## Week 5
-    We have to made the JavaScript exercises in differents folders saved in our repository. Each of the .js files are in the "exercises" folder into the "Semana-05" main folder. All of our JavaScript files have to be linked to the "index.html" file via the <script> tag on the "<head>". In this folder 6 files was created: variables and operators, strings, arrays, if else, for and functions. Each file has different exercises and we had to use the language correctly to get a good result.
+    We have to made the JavaScript exercises in differents folders saved in our repository. Each of the .js files are in the "exercises" folder into the "Semana-05" main folder. All of our JavaScript files have to be linked to the "index.html" file via the <script> tag on the "<head>". In this folder 6 files was created: variables and operators, strings, arrays, if else, for and functions. Each file has different exercises and we had to use the language correctly to get a good result. Also, we had to correct the errors of the "Semana-04" exercise.
 
     Link to my page: "https://alejogf.github.io/BaSP-M2022-Etapa-1/Semana-05/"
 
