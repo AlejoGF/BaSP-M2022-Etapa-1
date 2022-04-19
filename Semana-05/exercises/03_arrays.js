@@ -20,7 +20,7 @@ console.log('\n-Exercise 3.c:');
 
 var monthsExerciseC = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 monthsExerciseC.unshift('Months');
-monthsExerciseC.push('using unshift and push');
+monthsExerciseC.push('using unshift & push');
 
 console.log(monthsExerciseC);
 
