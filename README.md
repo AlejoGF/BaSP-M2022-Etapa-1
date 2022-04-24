@@ -23,6 +23,6 @@
 ## Week 6
     This is the Week 6.
 
-    Link to my page: "https://alejogf.github.io/BaSP-M2022-Etapa-1/Semana-05/"
+    Link to my page: "https://alejogf.github.io/BaSP-M2022-Etapa-1/Semana-06/views/index.html"
 
 _By AlejoGonzalezFittipaldi_

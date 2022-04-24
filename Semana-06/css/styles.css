@@ -258,27 +258,30 @@ textarea {
     }
 
     #sidebar .login,
-    #sidebar .signup {
+    #sidebar .signup,
+    #sidebar .btn-login-signup a {
         margin: 0;
         border-radius: 12px;
         font-size: 12px;
         text-transform: uppercase;
     }
 
-    #sidebar .login {
+    #sidebar .login,
+    #sidebar .btn-login-signup a .login {
         background-color: #49A37B;
         color: #FFF
     }
 
-    #sidebar .signup {
+    #sidebar .signup,
+    #sidebar .btn-login-signup a .signup {
         margin-left: 5%;
         background-color: #373867;
         color: #FFF;
     }
 
-    #sidebar button {
+    #sidebar .btn-login-signup a button {
         margin-top: 10px;
-        padding: 10px 5px 10px 5px;
+        padding: 10px 20px 10px 20px;
         background-color: #AACE9B;
         border: none;
         border-radius: 10px;

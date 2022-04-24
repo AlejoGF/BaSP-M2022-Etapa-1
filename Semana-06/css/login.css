@@ -10,6 +10,15 @@
     color: #373867;
 }
 
+#header-login h1 a {
+    text-decoration: none;
+    color: #373867;
+}
+
+#header-login h1 a:hover {
+    color: #373867;
+}
+
 #login {
     margin: 20% auto 20% auto;
 }
