@@ -20,5 +20,9 @@
 
     Link to my page: "https://alejogf.github.io/BaSP-M2022-Etapa-1/Semana-05/"
 
+## Week 6
+    This is the Week 6.
+
+    Link to my page: "https://alejogf.github.io/BaSP-M2022-Etapa-1/Semana-05/"
 
 _By AlejoGonzalezFittipaldi_

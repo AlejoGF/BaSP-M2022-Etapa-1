@@ -1,0 +1,91 @@
+#trackgenixsa {
+    width: 85%;
+    margin: auto;
+}
+
+#trackgenixsa .column span {
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #49A37B;
+}
+
+#trackgenixsa p {
+    font-size: 16px;
+}
+
+#trackgenixsa .container .column p:nth-child(3) {
+    display: none;
+}
+
+#trackgenixsa .container .column button {
+    display: none;
+    width: 37%;
+    justify-content: center;
+}
+
+#trackgenixsa .img-whatistrackgenix {
+    height: 135px;
+    object-fit: cover;
+}
+
+#trackgenixsa .img-ourhistory {
+    height: 170px;
+    object-fit: cover;
+}
+
+#features, #whytrackgenix, #form {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 35px auto 0 auto;
+}
+
+#features p {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 22.5px;
+    color: #373867;
+}
+
+#features span {
+    font-weight: 700;
+}
+
+#whytrackgenix img {
+    width: 70%;
+}
+
+#whytrackgenix p {
+    text-align: center;
+}
+
+#whytrackgenix .img-whytrackgenix {
+    height: 115px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#whytrackgenix .mt {
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: solid 1px #373867;
+}
+
+#form .form-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+#form .form-btn button {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+#form .form-btn .reset {
+    background-color: #DADADA;
+    color: #373867;
+}
