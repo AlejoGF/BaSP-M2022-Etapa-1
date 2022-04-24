@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/310311ac98.js"></script>
-    <link rel="stylesheet" href="/Semana-06/css/reset.css">
-    <link rel="stylesheet" href="/Semana-06/css/footer.css">
-    <link rel="stylesheet" href="/Semana-06/css/styles.css">
-    <link rel="stylesheet" href="/Semana-06/css/login.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="javascript/login.js"></script>
     <title>Trackgenix SA - Login</title>
 </head>
     <body>
@@ -25,17 +26,22 @@
                     <div class="login-form">
                         <form>
                             <div class="fields">
-                                <label for="field name">Username</label>
-                                <input type="text" placeholder="User">
-                                <label for="field email">Password</label>
-                                <input type="text" placeholder="******">
+                                <div class="login">
+                                    <label for="field name">Username</label>
+                                    <input type="text" name="email" id="email" placeholder="User">
+                                    <p class="error error-display">Invalid Email</p>
+                                </div>
+                                <div class="login">
+                                    <label for="field email">Password</label>
+                                    <input type="password" name="password" id="password" placeholder="Pass">
+                                    <p class="error error-display">Invalid Password</p>
+                                </div>
                                 <div class="remember-me">
-                                    <input type="checkbox" disabled="" enabled="" name="remember-me">
+                                    <input type="checkbox" id="remember-me" name="remember-me">
                                     <label for="remember-me">Remember me</label>
                                 </div>
                                 <div class="btn-login-signup btn-login">
-                                    <button class="login">Log In</button>
-                                    <button class="signup">Sign Up</button>
+                                    <input type="button" name="submit" value="Login" id="button-login">
                                 </div>
                                 <a href="#">Forgot Password?</a>
                             </div>
