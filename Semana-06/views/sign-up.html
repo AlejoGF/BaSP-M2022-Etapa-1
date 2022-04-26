@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/sign-up.css">
-    <script src="../javascript/login.js"></script>
+    <script src="../javascript/sign-up.js"></script>
     <title>Trackgenix SA - Sign-Up</title>
 </head>
     <body>
@@ -29,76 +29,59 @@
                         <form>
                             <div class="fields">
                                 <div class="sign-up">
-                                    <div class="left-col-sign-up">
-                                        <label for="field first-name">First Name</label>
-                                        <input type="text" name="first-name" id="first-name" placeholder="First Name">
-                                        <p class="error error-display">Invalid First Name</p>
-                                    </div>
-                                    <div class="right-col-sign-up">
-                                        <label for="field last-name">Last Name</label>
-                                        <input type="text" name="last-name" id="last-name" placeholder="Last Name">
-                                        <p class="error error-display">Invalid Last Name</p>
-                                    </div>
+                                    <label for="field first-name">First Name</label>
+                                    <input type="text" name="first-name" id="first-name" placeholder="Alejo">
+                                    <p class="error error-display">Invalid First Name</p>
                                 </div>
                                 <div class="sign-up">
-                                    <div class="left-col-sign-up">
-                                        <label for="field user-dni">DNI</label>
-                                        <input type="number" name="user-dni" id="user-dni" placeholder="32904808">
-                                        <p class="error error-display">Invalid DNI number</p>
-                                    </div>
-                                    <div class="right-col-sign-up">
-                                        <label for="field user-date-birth">Date of Birth</label>
-                                        <input type="date" name="user-date-birth" id="user-date-birth" placeholder="dd/mm/yyyy">
-                                        <p class="error error-display">Invalid Date of Birth</p>
-                                    </div>
+                                    <label for="field last-name">Last Name</label>
+                                    <input type="text" name="last-name" id="last-name" placeholder="Gonzalez">
+                                    <p class="error error-display">Invalid Last Name</p>
                                 </div>
                                 <div class="sign-up">
-                                    <div class="left-col-sign-up">
-                                        <label for="field user-telephone">Telephone Number</label>
-                                        <input type="number" name="user-telephone" id="user-telephone" placeholder="3415123654">
-                                        <p class="error error-display">Invalid Telephone Number</p>
-                                    </div>
-                                    <div class="right-col-sign-up">
-                                        <label for="field user-address">Address</label>
-                                        <input type="text" name="user-address" id="user-address" placeholder="Av. Pellegrini 123">
-                                        <p class="error error-display">Invalid Address</p>
-                                    </div>
+                                    <label for="field user-dni">DNI</label>
+                                    <input type="number" name="user-dni" id="user-dni" placeholder="12345678">
+                                    <p class="error error-display">Invalid DNI Number</p>
                                 </div>
                                 <div class="sign-up">
-                                    <div class="left-col-sign-up">
-                                        <label for="field user-city">City</label>
-                                        <input type="number" name="user-city" id="user-city" placeholder="Rosario">
-                                        <p class="error error-display">Invalid City</p>
-                                    </div>
-                                    <div class="right-col-sign-up">
-                                        <label for="field user-postal-code">Postal Code</label>
-                                        <input type="text" name="user-postal-code" id="user-postal-code" placeholder="2000">
-                                        <p class="error error-display">Invalid Postal Code</p>
-                                    </div>
+                                    <label for="field user-date-birth">Date of Birth</label>
+                                    <input type="date" name="user-date-birth" id="user-date-birth" placeholder="dd/mm/yyyy">
+                                    <p class="error error-display">You must have 18 years old</p>
                                 </div>
                                 <div class="sign-up">
-                                    <div class="left-col-sign-up">
-                                        <label for="field user-email">Email</label>
-                                        <input type="text" name="user-email" id="user-email" placeholder="Email">
-                                        <p class="error error-display">Invalid Email</p>
-                                    </div>
-                                    <div class="right-col-sign-up">
-                                        <label for="field user-email-confirmation">Confirm Email</label>
-                                        <input type="text" name="user-email-confirmation" id="user-email-confirmation" placeholder="Confirm Email">
-                                        <p class="error error-display">Your Email doesn't match</p>
-                                    </div>
+                                    <label for="field user-telephone">Telephone Number</label>
+                                    <input type="number" name="user-telephone" id="user-telephone" placeholder="3415267890">
+                                    <p class="error error-display">Invalid Telephone Number</p>
                                 </div>
                                 <div class="sign-up">
-                                    <div class="left-col-sign-up">
-                                        <label for="field user-password">Password</label>
-                                        <input type="password" name="user-password" id="user-password" placeholder="Password">
-                                        <p class="error error-display">Invalid Password</p>
-                                    </div>
-                                    <div class="right-col-sign-up">
-                                        <label for="field user-password-confirmation">Confirm Password</label>
-                                        <input type="password" name="user-password-confirmation" id="user-password-confirmation" placeholder="Confirm Password">
-                                        <p class="error error-display">Invalid Password</p>
-                                    </div>
+                                    <label for="field user-address">Address</label>
+                                    <input type="text" name="user-address" id="user-address" placeholder="Pellegrini 1234">
+                                    <p class="error error-display">Invalid Address</p>
+                                </div>
+                                <div class="sign-up">
+                                    <label for="field user-city">City</label>
+                                    <input type="text" name="user-city" id="user-city" placeholder="Rosario">
+                                    <p class="error error-display">Invalid City</p>
+                                </div>
+                                <div class="sign-up">
+                                    <label for="field user-postal-code">Postal Code</label>
+                                    <input type="text" name="user-postal-code" id="user-postal-code" placeholder="2000">
+                                    <p class="error error-display">Invalid Postal Code</p>
+                                </div>
+                                <div class="sign-up">
+                                    <label for="field user-email">Email</label>
+                                    <input type="text" name="user-email" id="user-email" placeholder="your@email.com">
+                                    <p class="error error-display">Invalid Email</p>
+                                </div>
+                                <div class="sign-up">
+                                    <label for="field user-password">Password</label>
+                                    <input type="password" name="user-password" id="user-password" placeholder="Your Password">
+                                    <p class="error error-display">Invalid Password</p>
+                                </div>
+                                <div class="sign-up">
+                                    <label for="field user-password-confirmation">Confirm Password</label>
+                                    <input type="password" name="user-password-confirmation" id="user-password-confirmation" placeholder="Confirm Password">
+                                    <p class="error error-display">Your passwords doesn't match</p>
                                 </div>
                                 <div class="btn-sign-up-signup btn-sign-up">
                                     <input type="button" name="submit" value="Sign Up" id="button-sign-up">

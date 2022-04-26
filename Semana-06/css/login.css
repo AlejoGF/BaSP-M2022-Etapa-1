@@ -104,15 +104,29 @@
 .login-form .error {
     margin: 0;
     font-size: 10px;
-    color: #ff0000;
+    color: #DC143C;
 }
 
 .error-display {
     display: none;
 }
 
-input[type=text].invalid-error, input[type=password].invalid-error{
-    border: 1px solid #ff0000;
+.error-display {
+    display: none;
+}
+
+input[type=text].invalid-error,
+input[type=number].invalid-error,
+input[type=date].invalid-error,
+input[type=password].invalid-error {
+    border: 1px solid #DC143C;
+}
+
+input[type=text].valid,
+input[type=number].valid,
+input[type=date].valid,
+input[type=password].valid {
+    border: 1px solid #3CB371;
 }
 
 /* media queries 768px */

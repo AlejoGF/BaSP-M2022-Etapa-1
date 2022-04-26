@@ -115,15 +115,25 @@
 .sign-up-form .error {
     margin: 0;
     font-size: 10px;
-    color: #ff0000;
+    color: #DC143C;
 }
 
 .error-display {
     display: none;
 }
 
-input[type=text].invalid-error, input[type=password].invalid-error{
-    border: 1px solid #ff0000;
+input[type=text].invalid-error,
+input[type=number].invalid-error,
+input[type=date].invalid-error,
+input[type=password].invalid-error {
+    border: 1px solid #DC143C;
+}
+
+input[type=text].valid,
+input[type=number].valid,
+input[type=date].valid,
+input[type=password].valid {
+    border: 1px solid #3CB371;
 }
 
 /* media queries 768px */
@@ -156,8 +166,14 @@ input[type=text].invalid-error, input[type=password].invalid-error{
         width: 100%;
     }
 
+    #button-sign-up {
+        width: 100%;
+    }
+
     .btn-sign-up {
-        flex-direction: column;
+        align-items: center;
+        margin: auto 0 auto 0;
+        width: 45%;
     }
 
     .btn-sign-up button {
@@ -165,21 +181,14 @@ input[type=text].invalid-error, input[type=password].invalid-error{
     }
 
     .sign-up-form .sign-up {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin-bottom: 10px;
-    }
-
-    .left-col-sign-up,
-    .right-col-sign-up {
-        display: flex;
         flex-direction: column;
-        width: 100%;
+        margin-bottom: 10px;
+        width: 45%;
     }
 
-    .right-col-sign-up {
-        margin-top: 0;
-        margin-left: 5%;
+    .sign-up-form .fields {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
     }
 }

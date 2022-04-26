@@ -6,8 +6,32 @@ window.onload = function () {
     passwordContent = inputContent[1];
     inputEmail = emailContent.children[1];
     inputPassword = passwordContent.children[1];
-    passInput = document.getElementById('password');
     loginButton.addEventListener('click', loginClick);
+
+    inputEmail.onfocus = function(){
+        myFocus(inputEmail, emailContent)
+    }
+    inputEmail.onblur = function (){
+        myBlur(inputEmail, emailContent);
+    }
+    inputPassword.onfocus = function(){
+        myFocus(inputPassword, passwordContent)
+    }
+    inputPassword.onblur = function (){
+        myBlur(inputPassword, passwordContent);
+    }
+}
+
+function myFocus(input, inputText){
+    hideError(inputText);
+}
+
+function myBlur(input, inputText){
+    if (input.value == "") {
+        showError(inputText);
+    } else {
+        hideError(inputText);
+    }
 }
 
 function loginClick() {
@@ -17,14 +41,14 @@ function loginClick() {
         alert("Has login successfully\nEmail: " + email +"\nPassword: " + password)
     }
     if (!validateEmail(email)) {
-        sError(emailContent);
+        showError(emailContent);
     } else {
-        hError(emailContent);
+        hideError(emailContent);
     }
     if (!validatePassword(password)) {
-        sError(passwordContent);
+        showError(passwordContent);
     } else {
-        hError(passwordContent);
+        hideError(passwordContent);
     }
 }
 
@@ -60,13 +84,13 @@ function validatePassword(password) {
     }
 }
 
-function sError(inputContent) {
-    var contentChildrens = inputContent.children;+
+function showError(inputContent) {
+    var contentChildrens = inputContent.children;
     contentChildrens[1].classList.add('invalid-error')
     contentChildrens[2].classList.remove('error-display');
 }
 
-function hError(inputContent){
+function hideError(inputContent){
     var contentChildrens = inputContent.children;
     contentChildrens[1].classList.remove('invalid-error')
     contentChildrens[2].classList.add('error-display');
