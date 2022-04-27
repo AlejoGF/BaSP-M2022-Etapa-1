@@ -13,16 +13,16 @@
     We made the mobile first version of the landing page with flexbox. I created the different files .css with the main properties inside each of them. The reset.css was created to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings, etc. In the styles.css file you can found the general properties of the landing page and also the media queries. Then I added the others .css files to change the layout of each part of my HTML page. I'm talking about the header, the sidebar, the footer, and the main who contains all the properties related to the main contain of the landing page.
     All the css was made with display:flex property in order to have a more effective responsive design.
 
-    Link to my page: "https://alejogf.github.io/BaSP-M2022-Etapa-1/Semana-04/"
+    <a href="https://alejogf.github.io/BaSP-M2022-Etapa-1/Semana-04/">Link to my "Semana-04" page</a>
 
 ## Week 5
     We have to made the JavaScript exercises in differents folders saved in our repository. Each of the .js files are in the "exercises" folder into the "Semana-05" main folder. All of our JavaScript files have to be linked to the "index.html" file via the <script> tag on the "<head>". In this folder 6 files was created: variables and operators, strings, arrays, if else, for and functions. Each file has different exercises and we had to use the language correctly to get a good result. Also, we had to correct the errors of the "Semana-04" exercise.
 
-    Link to my page: "https://alejogf.github.io/BaSP-M2022-Etapa-1/Semana-05/"
+    <a href="https://alejogf.github.io/BaSP-M2022-Etapa-1/Semana-05/">Link to my "Semana-05" page</a>
 
 ## Week 6
-    This is the Week 6.
+    We have to create the html and css files of the Login and the Sign Up of our project. In those files we have to validate the data entry in the corresponding files. Also we have to add the events "blur" and "focus" in all of the inputs. In case you submit successfully the form a window with the message "Successfully registered" or "Has login successfully" will appears.
 
-    Link to my page: "https://alejogf.github.io/BaSP-M2022-Etapa-1/Semana-06/views/index.html"
+    <a href="https://alejogf.github.io/BaSP-M2022-Etapa-1/Semana-06/views/">Link to my "Semana-06" page</a>
 
 _By AlejoGonzalezFittipaldi_

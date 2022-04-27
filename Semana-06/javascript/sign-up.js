@@ -159,7 +159,7 @@ function signUpClick() {
         allValid = false;
     }
     if (allValid) {
-        alert('¡Succesfully Register!\nName: '+ data.firstName + '\nLast Name: ' + data.lastName + '\nDNI: ' + data.dni + '\nDate of Birth: ' + data.birthDate + '\nTelephone Number: ' + data.telephone + '\nCity: ' + data.city + '\nAddress: ' + data.address + '\nPostal Code: ' + data.postalCode + '\nEmail: ' + data.email + '\nPassword: ' + data.password + '\nPassword Confirm: ' + data.passwordConfirmation)
+        alert('¡Successfully registered!\nName: '+ data.firstName + '\nLast Name: ' + data.lastName + '\nDNI: ' + data.dni + '\nDate of Birth: ' + data.birthDate + '\nTelephone Number: ' + data.telephone + '\nCity: ' + data.city + '\nAddress: ' + data.address + '\nPostal Code: ' + data.postalCode + '\nEmail: ' + data.email + '\nPassword: ' + data.password + '\nPassword Confirm: ' + data.passwordConfirmation)
     }
 }
 
