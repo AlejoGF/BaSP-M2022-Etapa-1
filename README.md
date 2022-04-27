@@ -1,6 +1,6 @@
 # Trackgenix SA
-- The following project is the HTML and CSS structure of the landing page of "Trackgenix SA". Trackgenix SA provides software development services to other companies. "Trackgenix" is a web system whose objective is to facilitate the registration of hours worked by each employee in each project and work team.
-- The proyect was saved in the main folder "BaSP-M2022-Etapa-1". Inside this folder, another named "Semana-0X" was saved. In the last folder is where the index.html file was made. Open the file "index.html" on your browser.
+The following project is the HTML and CSS structure of the landing page of "Trackgenix SA". Trackgenix SA provides software development services to other companies. "Trackgenix" is a web system whose objective is to facilitate the registration of hours worked by each employee in each project and work team.
+The proyect was saved in the main folder "BaSP-M2022-Etapa-1". Inside this folder, another named "Semana-0X" was saved. In the last folder is where the index.html file was made. Open the file "index.html" on your browser.
 
 ## Week 02
 HTML5 basic structure was first placed in this project. Then, inside the "body" the "main" was settled with all the components of the website on it. The class "menu" is the first class section, this is were the sidebar menu was placed and we can find inside the "searchbar" and the "log in" and "sign up" buttons.
@@ -24,5 +24,6 @@ We have to made the JavaScript exercises in differents folders saved in our repo
 We have to create the html and css files of the Login and the Sign Up of our project. In those files we have to validate the data entry in the corresponding files. Also we have to add the events "blur" and "focus" in all of the inputs. In case you submit successfully the form a window with the message "Successfully registered" or "Has login successfully" will appears.
 
 [Link to my "Semana-06" page](https://alejogf.github.io/BaSP-M2022-Etapa-1/Semana-06/views/)
+
 
 _By AlejoGonzalezFittipaldi_

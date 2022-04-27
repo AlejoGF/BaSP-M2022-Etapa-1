@@ -97,17 +97,6 @@
     color: #373867
 }
 
-.left-col-sign-up,
-.right-col-sign-up {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.right-col-sign-up {
-    margin-top: 10px;
-}
-
 .sign-up-form a:hover {
     color: #AACE9B
 }
@@ -134,61 +123,4 @@ input[type=number].valid,
 input[type=date].valid,
 input[type=password].valid {
     border: 1px solid #3CB371;
-}
-
-/* media queries 768px */
-@media (min-width: 768px) {
-    #header-sign-up h1 {
-        font-size: 40px;
-    }
-}
-
-/* media queries 1024px */
-@media (min-width: 1024px) {
-    #main-sign-up {
-        margin-left: 0;
-    }
-
-    #header-sign-up h1 {
-        padding: 3%;
-        text-align: left;
-    }
-
-    #sign-up {
-        margin: 5% auto 5% auto;
-    }
-
-    #sign-up .container {
-        width: 30%;
-    }
-
-    #sign-up form {
-        width: 100%;
-    }
-
-    #button-sign-up {
-        width: 100%;
-    }
-
-    .btn-sign-up {
-        align-items: center;
-        margin: auto 0 auto 0;
-        width: 45%;
-    }
-
-    .btn-sign-up button {
-        margin-bottom: 0;
-    }
-
-    .sign-up-form .sign-up {
-        flex-direction: column;
-        margin-bottom: 10px;
-        width: 45%;
-    }
-
-    .sign-up-form .fields {
-        flex-wrap: wrap;
-        justify-content: space-around;
-        flex-direction: row;
-    }
 }
