@@ -1,0 +1,14 @@
+header {
+    width: 85%;
+    margin: auto;
+}
+
+header h1 {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    border-bottom: solid 3px #373867;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: #373867;
+}
