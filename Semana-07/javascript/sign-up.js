@@ -15,14 +15,62 @@ window.onload = function () {
     inputTelephone = telephoneContent.children[1];
     addressContent = inputContent[5];
     inputAddress = addressContent.children[1];
-    postalCodeContent = inputContent[6];
+    cityContent = inputContent[6];
+    inputCity = cityContent.children[1];
+    postalCodeContent = inputContent[7];
     inputPostalCode = postalCodeContent.children[1];
-    emailContent = inputContent[7];
+    emailContent = inputContent[8];
     inputEmail = emailContent.children[1];
-    passwordContent = inputContent[8];
+    passwordContent = inputContent[9];
     inputPassword = passwordContent.children[1];
-    confirmPasswordContent = inputContent[9];
+    confirmPasswordContent = inputContent[10];
     inputConfirmPassword = confirmPasswordContent.children[1];
+
+    if (inputFirstName.value =! null) {
+        inputFirstName.value = localStorage.getItem('Name');
+    }
+    if (inputLastName.value =! null) {
+        inputLastName.value = localStorage.getItem('Last Name');
+    }
+    if (inputDni.value =! null) {
+        inputDni.value = localStorage.getItem('DNI');
+    }
+    if (inputDateOfBirth.value =! null) {
+        inputDateOfBirth.value = formatBirthDateYMD(localStorage.getItem('Date of birth'));
+    }
+    if (inputTelephone.value =! null) {
+        inputTelephone.value = localStorage.getItem('Telephone number');
+    }
+    if (inputAddress.value =! null) {
+        inputAddress.value = localStorage.getItem('Address');
+    }
+    if (inputCity.value =! null) {
+        inputCity.value = localStorage.getItem('City');
+    }
+    if (inputPostalCode.value =! null) {
+        inputPostalCode.value = localStorage.getItem('Postal code');
+    }
+    if (inputEmail.value =! null) {
+        inputEmail.value = localStorage.getItem('Email');
+    }
+    if (inputPassword.value =! null) {
+        inputPassword.value = localStorage.getItem('Password');
+    }
+    if (inputTelephone.value =! null) {
+        inputTelephone.value = localStorage.getItem('Telephone number');
+    }
+
+    function myFocus(input, inputText) {
+        hideError(inputText);
+    }
+
+    function myBlur(input, inputText) {
+        if (input.value == "") {
+            showError(inputText);
+        } else {
+            hideError(inputText);
+        }
+    }
 
     inputFirstName.onfocus = function() {
         myFocus(inputFirstName, contentFirstName);
@@ -60,6 +108,12 @@ window.onload = function () {
     inputAddress.onblur = function () {
         myBlur(inputAddress, addressContent);
     }
+    inputCity.onfocus = function() {
+        myFocus(inputCity, cityContent);
+    }
+    inputCity.onblur = function () {
+        myBlur(inputCity, cityContent);
+    }
     inputPostalCode.onfocus = function() {
         myFocus(inputPostalCode, postalCodeContent);
     }
@@ -86,81 +140,57 @@ window.onload = function () {
     }
 }
 
-function myFocus(input, inputText) {
-    hideError(inputText);
+function signUpRequest(data, url) {
+    fetch(url
+    + '?name=' + data.firstName
+    + '&lastName=' + data.lastName
+    + '&dni=' + data.dni
+    + '&dob=' + data.birthDate
+    + '&phone=' + data.telephone
+    + '&address=' + data.address
+    + '&city=' + data.city
+    + '&zip=' + data.postalCode
+    + '&email=' + data.email
+    + '&password=' + data.password, {
+        method: 'GET',
+        params: {
+            firstName: data.firstName,
+            lastName: data.lastName,
+            dni: data.dni,
+            birthDate: data.birthDate,
+            telephone: data.telephone,
+            address: data.address,
+            city: data.city,
+            postalCode: data.postalCode,
+            email: data.email,
+            password: data.password
+        }
+    })
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(jsonResponse) {
+            console.log(jsonResponse)
+            if (jsonResponse.success) {
+                localStorageSave(data);
+            }
+        })
+        .catch(function(error) {
+            console.log(error);
+        })
 }
 
-function myBlur(input, inputText) {
-    if (input.value == "") {
-        showError(inputText);
-    } else {
-        hideError(inputText);
-    }
-}
-
-function signUpClick() {
-    var inputText = document.getElementsByClassName('sign-up');
-    var data = {
-        firstName : document.getElementById('first-name').value,
-        lastName : document.getElementById('last-name').value,
-        dni : document.getElementById('user-dni').value,
-        birthDate : document.getElementById('user-date-birth').value,
-        telephone : document.getElementById('user-telephone').value,
-        address : document.getElementById('user-address').value,
-        city : document.getElementById('user-city').value,
-        postalCode : document.getElementById('user-postal-code').value,
-        email : document.getElementById('user-email').value,
-        password : document.getElementById('user-password').value,
-        passwordConfirmation : document.getElementById('user-password-confirmation').value
-    }
-    var allValid = true;
-    if (!validateFirstNameLastName(data.firstName, inputText[0])) {
-        alert('Name is invalid')
-        allValid = false;
-    }
-    if (!validateFirstNameLastName(data.lastName, inputText[1])) {
-        alert('Last Name is invalid')
-        allValid = false;
-    }
-    if (!validateDNI(data.dni, inputText[2])) {
-        alert('DNI is invalid')
-        allValid = false
-    }
-    if (!validateBirthOfDate(data.birthDate, inputText[3])) {
-        alert('Birth of Date is invalid')
-        allValid = false
-    }
-    if (!validateTelephone(data.telephone, inputText[4])) {
-        alert('Phone is invalid')
-        allValid = false;
-    }
-    if (!validateCity(data.city, inputText[5])) {
-        alert('City is invalid')
-        allValid = false;
-    }
-    if (!validateAddress(data.address, inputText[6])) {
-        alert('Address is invalid')
-        allValid = false;
-    }
-    if (!validatePostalCode(data.postalCode, inputText[7])) {
-        alert('Postal Code is invalid')
-        allValid = false;
-    }
-    if (!validateEmail(data.email, inputText[8])) {
-        alert('Invalid Email')
-        allValid = false;
-    }
-    if (!validatePassword(data.password, inputText[9])) {
-        alert('Invalid Password')
-        allValid = false;
-    }
-    if (!validatePasswordConfirmation(data.password, data.passwordConfirmation, inputText[10])) {
-        alert('Password do not match')
-        allValid = false;
-    }
-    if (allValid) {
-        alert('¡Successfully registered!\nName: '+ data.firstName + '\nLast Name: ' + data.lastName + '\nDNI: ' + data.dni + '\nDate of Birth: ' + data.birthDate + '\nTelephone Number: ' + data.telephone + '\nCity: ' + data.city + '\nAddress: ' + data.address + '\nPostal Code: ' + data.postalCode + '\nEmail: ' + data.email + '\nPassword: ' + data.password + '\nPassword Confirm: ' + data.passwordConfirmation)
-    }
+function localStorageSave(data) {
+    localStorage.setItem('First Name', data.firstName)
+    localStorage.setItem('Last Name', data.lastName)
+    localStorage.setItem('DNI', data.dni)
+    localStorage.setItem('Birth of date', data.birthDate)
+    localStorage.setItem('Telephone number', data.telephone)
+    localStorage.setItem('Address', data.address)
+    localStorage.setItem('City', data.city)
+    localStorage.setItem('Postal code', data.postalCode)
+    localStorage.setItem('Email', data.email)
+    localStorage.setItem('Password', data.password)
 }
 
 function validateFirstNameLastName(x, textInputs) {
@@ -217,7 +247,7 @@ function getTodayDate(){
 function validateBirthOfDate(date, textInputs){
     var inputDate = new Date(date);
     var thisMoment = new Date(Date.now());
-    var isMajor = new Date(thisMoment - inputDate).getFullYear() - 1970 >= 18;
+    var isMajor = new Date(thisMoment - inputDate).getFullYear() - 1950 >= 18;
     if (isMajor) {
         hideError(textInputs);
         return true;
@@ -225,6 +255,43 @@ function validateBirthOfDate(date, textInputs){
         showError(textInputs);
         return false;
     }
+}
+
+function formatBirthDateMDY(date) {
+    var inputFormatDate = new Date(date);
+    var month = inputFormatDate.getMonth();
+    month++;
+    if (month < 10) {
+        month = '0' + month;
+    }
+    month = month.toString()
+    var day = inputFormatDate.getDate();
+    day++;
+    if (day < 10) {
+        day = '0' + day;
+    }
+    day = day.toString();
+    var year = inputFormatDate.getFullYear().toString();
+    date = month + '/' + day + '/' + year;
+    return date;
+}
+
+function formatBirthDateYMD(date) {
+    var inputFormatDate = new Date(date);
+    var month = inputFormatDate.getMonth();
+    month++;
+    if (month < 10) {
+        month = '0' + month;
+    }
+    month = month.toString();
+    var day = inputFormatDate.getDate();
+    if (day < 10) {
+        day = '0' + day;
+    }
+    day = day.toString();
+    var year = inputFormatDate.getFullYear().toString();
+    date = year + '-' + month + '-' + day;
+    return date;
 }
 
 function validateTelephone(telephone, textInputs) {
@@ -372,4 +439,77 @@ function hideError(inputContent) {
     var contentChildrens = inputContent.children;
     contentChildrens[1].classList.remove('invalid-error')
     contentChildrens[2].classList.add('error-display');
+}
+
+function signUpClick() {
+    var inputText = document.getElementsByClassName('sign-up');
+    var data = {
+        firstName: document.getElementById('first-name').value,
+        lastName: document.getElementById('last-name').value,
+        dni: document.getElementById('user-dni').value,
+        birthDate: document.getElementById('user-date-birth').value,
+        telephone: document.getElementById('user-telephone').value,
+        address: document.getElementById('user-address').value,
+        city: document.getElementById('user-city').value,
+        postalCode: document.getElementById('user-postal-code').value,
+        email: document.getElementById('user-email').value,
+        password: document.getElementById('user-password').value,
+        passwordConfirmation: document.getElementById('user-password-confirmation').value
+    }
+    var errors = [];
+    var errorsAlert = ' ';
+    var allValid = true;
+    if (!validateFirstNameLastName(data.firstName, inputText[0])) {
+        allValid = false;
+        errors.push('Name is invalid');
+    }
+    if (!validateFirstNameLastName(data.lastName, inputText[1])) {
+        allValid = false;
+        errors.push('Last Name is invalid');
+    }
+    if (!validateDNI(data.dni, inputText[2])) {
+        allValid = false
+        errors.push('DNI is invalid');
+    }
+    if (!validateBirthOfDate(data.birthDate, inputText[3])) {
+        allValid = false
+        errors.push('Birth of Date is invalid');
+    }
+    if (!validateTelephone(data.telephone, inputText[4])) {
+        allValid = false;
+        errors.push('Phone is invalid');
+    }
+    if (!validateAddress(data.address, inputText[5])) {
+        allValid = false;
+        errors.push('Address is invalid');
+    }
+    if (!validateCity(data.city, inputText[6])) {
+        allValid = false;
+        errors.push('City is invalid');
+    }
+    if (!validatePostalCode(data.postalCode, inputText[7])) {
+        allValid = false;
+        errors.push('Postal Code is invalid');
+    }
+    if (!validateEmail(data.email, inputText[8])) {
+        allValid = false;
+        errors.push('Invalid Email');
+    }
+    if (!validatePassword(data.password, inputText[9])) {
+        allValid = false;
+        errors.push('Invalid Password');
+    }
+    if (!validatePasswordConfirmation(data.password, data.passwordConfirmation, inputText[10])) {
+        allValid = false;
+        errors.push('Password do not match');
+    }
+    if (allValid) {
+        data.birthDate = formatBirthDateMDY(data.birthDate);
+        signUpRequest(data, 'https://basp-m2022-api-rest-server.herokuapp.com/signup')
+    } else {
+        for (var i = 0; i < errors.length; i++) {
+            errorsAlert = errorsAlert + errors[i] + ' ';
+        }
+        alert('Error: ' + errorsAlert);
+    }
 }
