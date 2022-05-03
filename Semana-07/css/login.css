@@ -97,6 +97,14 @@
     color: #373867
 }
 
+.login-form .link-sign-up {
+    margin-top: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+    color: #373867
+}
+
 .login-form a:hover {
     color: #AACE9B
 }
@@ -105,10 +113,6 @@
     margin: 0;
     font-size: 10px;
     color: #DC143C;
-}
-
-.error-display {
-    display: none;
 }
 
 .error-display {

@@ -1,5 +1,4 @@
 window.onload = function () {
-    var loginForm = document.getElementById('form');
     var loginButton = document.getElementById('button-login');
     var inputContent = document.getElementsByClassName('login');
     emailContent = inputContent[0];
@@ -22,6 +21,18 @@ window.onload = function () {
     }
 }
 
+function showError(inputContent) {
+    var contentChildrens = inputContent.children;
+    contentChildrens[1].classList.add('invalid-error')
+    contentChildrens[2].classList.remove('error-display');
+}
+
+function hideError(inputContent){
+    var contentChildrens = inputContent.children;
+    contentChildrens[1].classList.remove('invalid-error')
+    contentChildrens[2].classList.add('error-display');
+}
+
 function myFocus(input, inputText){
     hideError(inputText);
 }
@@ -31,24 +42,6 @@ function myBlur(input, inputText){
         showError(inputText);
     } else {
         hideError(inputText);
-    }
-}
-
-function loginClick() {
-    var email = inputEmail.value;
-    var password = inputPassword.value;
-    if (validateEmail(email) && validatePassword(password)) {
-        alert("Has login successfully\nEmail: " + email +"\nPassword: " + password)
-    }
-    if (!validateEmail(email)) {
-        showError(emailContent);
-    } else {
-        hideError(emailContent);
-    }
-    if (!validatePassword(password)) {
-        showError(passwordContent);
-    } else {
-        hideError(passwordContent);
     }
 }
 
@@ -84,14 +77,42 @@ function validatePassword(password) {
     }
 }
 
-function showError(inputContent) {
-    var contentChildrens = inputContent.children;
-    contentChildrens[1].classList.add('invalid-error')
-    contentChildrens[2].classList.remove('error-display');
+function request(emailValue, passwordValue, url){
+    fetch((url + '?email=' + emailValue + '&password=' + passwordValue), {
+        method: 'GET',
+        params: {
+            email: emailValue,
+            password: passwordValue,
+        }
+    })
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(jsonResponse){
+        console.log(jsonResponse)
+        alert(jsonResponse.msg);
+    })
+    .catch(function(error){
+        console.warn(error);
+    });
 }
 
-function hideError(inputContent){
-    var contentChildrens = inputContent.children;
-    contentChildrens[1].classList.remove('invalid-error')
-    contentChildrens[2].classList.add('error-display');
+function loginClick() {
+    var email = inputEmail.value;
+    var password = inputPassword.value;
+    if (validateEmail(email) && validatePassword(password)) {
+        request(email, password, 'https://basp-m2022-api-rest-server.herokuapp.com/login')
+    }
+    if (!validateEmail(email)) {
+        alert('Your mail is invalid')
+        showError(emailContent);
+    } else {
+        hideError(emailContent);
+    }
+    if (!validatePassword(password)) {
+        alert('Wrong password')
+        showError(passwordContent);
+    } else {
+        hideError(passwordContent);
+    }
 }
