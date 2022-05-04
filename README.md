@@ -30,8 +30,8 @@ We have to create the html and css files of the Login and the Sign Up of our pro
 [Link to my "Semana-06" page](https://alejogf.github.io/BaSP-M2022-Etapa-1/Semana-06/views/)
 
 ## Week 07
-Here i'll write about the Week 07 exercise.
+We work with our "Semana-06" validations and save the the results of the sign up form in the LocalStorage. We have to do a request using Fetch metod of JS. Sending all the data of the form. The request can only aprove if all the validations are ok. Later in case of the answer was successful we have to show alerts and save the Data on the LocalStorage. If the answer was not successful we also have to show other alers with the error.
 
-[Here will be my GitHub Page link](https://github.com/AlejoGF/BaSP-M2022-Etapa-1)
+[Link to my "Semana-07" page](https://alejogf.github.io/BaSP-M2022-Etapa-1/Semana-07/views/)
 
 _By AlejoGonzalezFittipaldi_

@@ -138,6 +138,20 @@ window.onload = function () {
     inputConfirmPassword.onblur = function () {
         myBlur(inputConfirmPassword, confirmPasswordContent);
     }
+
+    var invalidChars = ['-', '+', 'e', '.'];
+
+    inputDni.addEventListener('keydown', function (e) {
+        if (invalidChars.includes(e.key)) {
+            e.preventDefault();
+        }
+    })
+
+    inputTelephone.addEventListener('keydown', function (e) {
+        if (invalidChars.includes(e.key)) {
+            e.preventDefault();
+        }
+    })
 }
 
 function signUpRequest(data, url) {
